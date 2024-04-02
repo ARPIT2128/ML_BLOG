@@ -1,6 +1,8 @@
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from "firebase/auth";
 import { auth } from "../firebase";
 import React, { useState, useEffect } from "react";
@@ -9,6 +11,21 @@ const Login = () => {
   //signIN
   const [email_in, signinsetEmail] = useState("");
   const [password_in, signinsetPassword] = useState("");
+
+  // SigninWithGoogleAuth
+  const signInWithGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // Google sign-in successful
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        // Handle errors here
+        console.error(error);
+      });
+  };
 
   const signIn = (e) => {
     e.preventDefault();
@@ -71,6 +88,7 @@ const Login = () => {
                   src="./google-logo.png"
                   alt="google_logo"
                   className="google-logo"
+                  onClick={signInWithGoogle}
                 />
               </i>
             </div>
@@ -101,6 +119,7 @@ const Login = () => {
                   src="./google-logo.png"
                   alt="google_logo"
                   className="google-logo"
+                  onClick={signInWithGoogle}
                 />
               </i>
             </div>
