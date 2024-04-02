@@ -1,0 +1,14 @@
+.jumbotron {
+  background-image: url("./homepage.jpg");
+  background-size: cover;
+  text-shadow: 0 0 5px rgb(248, 240, 240);
+  justify-content: center;
+  align-items: center;
+  display: flex; // Fix typo "position" to "display"
+  margin-bottom: 20px; // Add margin bottom to jumbotron
+}
+// Adjust container styles
+.custom-container {
+  margin: 50px auto; 
+  padding: 20px; 
+}

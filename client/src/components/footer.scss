@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  background-color: hsl(223, 9%, 15%);
+  padding: 10px 0 0 0;
+  margin-top: auto ;
+
+  h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: #24262b;
+    }
+
+    .social-image {
+      height: 100%;
+    }
+  }
+}

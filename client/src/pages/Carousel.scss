@@ -1,0 +1,61 @@
+// Carousel.scss
+
+// Styles for carousel items
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+  min-width: 1200px; 
+}
+
+// Styles for carousel control buttons
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background-color: black;
+  border: none;
+  margin: 0;
+  padding: 10px; // Add padding around buttons
+  position: absolute; // Position the buttons
+  top: 50%; // Align buttons vertically in the middle
+  transform: translateY(-50%); // Adjust vertical alignment
+}
+
+.carousel-control-prev {
+  left: 10px; // Add space between button and left edge
+}
+
+.carousel-control-next {
+  right: 10px; // Add space between button and right edge
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+// Styles for carousel control button text
+.carousel-control-prev span,
+.carousel-control-next span {
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+// Adjust styles for smaller screens
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+}
+
+.bd-placeholder-img{
+  object-fit: cover;
+}

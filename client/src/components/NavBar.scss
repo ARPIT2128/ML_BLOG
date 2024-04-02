@@ -1,0 +1,41 @@
+/* NavBar.scss */
+
+.navbar-login {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .navbar-brand {
+    margin-right: 1rem;
+
+    img {
+      max-width: 100%;
+      height: auto; 
+    }
+  }
+  
+
+}
+
+@media (max-width: 768px) {
+  .navbar.navbar-login {
+    .container-fluid {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+.auth-details-container {
+  display: flex;
+  align-items: center;
+}
+
+.auth-details-container p {
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+}
