@@ -109,7 +109,8 @@
   
     // SIDE
     &:before {
-      border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color,10%) 100%);
+      border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color, 10deg / 1%) 100%);
+
       border-image-slice: 1 1 0 1;
       left: -0.59em; top: .15em;
       width: .31em;
